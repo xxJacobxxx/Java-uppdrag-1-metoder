@@ -2,11 +2,16 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        ritaLinj(5);
+        ritaRektang(4, 5);
     }
-    static void ritaLinj (int längd){
-        for (int i=0; i<längd; i++)
-        System.out.print("-");
+
+    static void ritaRektang (int längd, int höjd){
+        for (int i=0; i<höjd;i++){
+            System.out.println();
+            for (int j=0; j<längd;j++){
+                System.out.print("*");
+            }
+        }
     }
     
 }
