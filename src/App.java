@@ -2,16 +2,20 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        ritaRektang(4, 5);
+        Scanner tb = new Scanner(System.in);
+        System.out.println("Droppa ett tal som är negativt eller positivt");
+        System.out.println(tal_positiv(tb.nextInt()));
+        
     }
 
-    static void ritaRektang (int längd, int höjd){
-        for (int i=0; i<höjd;i++){
-            System.out.println();
-            for (int j=0; j<längd;j++){
-                System.out.print("*");
-            }
-        }
+    static boolean tal_positiv (double tal){
+       double summa = tal+tal;
+       if (summa<=0){
+        return false;
+       }
+       else{
+        return true;
+       }
     }
     
 }
